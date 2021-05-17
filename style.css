@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, verdana, sans-serif;
+}
+
+.m.bodyPadding {
+    padding: 10px 10px 10px 10px;
+}
+
+/*HEADER*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    height: 30px;
+    margin: 0px 34px 0px 34px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+     margin: 0px 34px 0px 34px;
+     font-size: 14px; 
+}
+
+.anchors {
+    color: black;
+}
+
+.inscription {
+    color:  #0065FC;
+    font-weight: bold;
+
+}
