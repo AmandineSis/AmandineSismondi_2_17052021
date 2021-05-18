@@ -24,6 +24,11 @@ h4 {
     margin: 0px 0px 0px 0px;
 }
 
+h4 + p {
+    font-size: 12px;
+    margin: 0px 0px 10px 0px;
+}
+
 /*HEADER*/
 
 nav {
@@ -64,7 +69,7 @@ nav li {
     font-size: 14px;  
 }
 
-.intro p {
+#intro p {
     font-size: 14px;
     margin: 0px 0px 10px 0px;
     line-height: 0,5rem;
@@ -84,12 +89,44 @@ form {
 }
 
 
-.recherche li {
+#recherche li {
     margin: 0PX 65px 0px 0px;
 } 
 
-.infoComplementaire {
+#infoComplementaire {
     display: flex;
     justify-items: flex-start;
     align-items: center;
 }
+
+/*SECTION HEBERGEMENTS*/
+
+#section1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.titrePopulaire {
+    display: flex;
+}
+
+.resultatsHebergement {
+    display: flex;
+   
+}
+
+.photoHebergement {
+    width: auto;
+    height: 112px;
+    
+}
+
+
+.photoPopulaire{
+    width: 136px;
+    height: 128px;
+}
+
+/*SECTION ACTIVITES*/
+
+/*FOOTER*/
