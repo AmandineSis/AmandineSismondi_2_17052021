@@ -137,18 +137,34 @@ input.blocRechercher {
     color: white;
 }
 
+#filtresRecherche {
+    display: flex;
+    vertical-align: middle;
+    border: 2px blue solid;
+}
+
+
 #filtres {
     display: flex;
     justify-content: flex-start;
     list-style: none;
     padding: 0px 0px 0px 0px;
 }
-
+ul i {
+    width: 50px;
+    height: 50px;
+    background-color: #DEEBFF;
+    border-radius: 45px 45px 45px 45px;
+}
 
 #recherche li {
     display: flex;
-    border: 1px black solid;
-    margin: 0PX 65px 0px 0px;
+    width: 194px;
+    height: 50px;
+    border: 1px #DEEBFF solid;
+    border-radius: 45px 45px 45px 45px;
+    margin: 0PX 24px 0px 0px; 
+    
 } 
 
 #info {
