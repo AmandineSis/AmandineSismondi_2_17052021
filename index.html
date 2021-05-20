@@ -10,31 +10,32 @@
 
     <body>
         <div id="marge">
+
         <!--Header-->
             <header>
                 <nav>
-                    <img src="logo/Reservia.svg" alt="logo"/>
+                    <img src="logo/Reservia.svg" alt="logo"/>    <!--Logo-->
                     <ul>
-                        <li class="ancres">Hébergements</li>
-                        <li class="ancres">Activités</li>
+                        <li class="ancres"> <a href="#hebergement">Hébergements</a></li>     <!--Menu--> 
+                        <li class="ancres"><a href="#activites">Activités</a></li>
                         <li class="inscription">S'inscrire</li>
                     </ul>
                 </nav>
             </header>
 
             
-        <!--main-->
+        <!--section principale du site-->
             <main>
 
              <!--section recherche-->
                 <section id="recherche">
 
-                    <div id="intro">
+                    <div id="intro">        <!--Introduction du site-->
                         <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                         <p>En plein centre ville ou en pleine nature</p>
                     </div>
                     
-                    <form method="POST">
+                    <form method="POST">    <!--Champ de saisie de la recherche-->
                             <p>
                                 <i class="fas fa-map-marker-alt"></i>
                                 <input type="search" name="ville, pays" value="Marseille, France"/>
@@ -42,15 +43,15 @@
                             </p>
                     </form>
 
-                    <ul id="filtres">
-                        <li><h3>Filtres</h3></li>
+                    <ul id="filtres">       <!--filtres de la recherche-->
+                        <li><h4>Filtres</h4></li>
                         <li><i class="fas fa-money-bill-wave-alt"></i><h3>Economique</h3></li>
                         <li><i class="fas fa-child"></i><h3>Familiale</h3></li>
                         <li><i class="fas fa-heart"></i><h3>Romantique</h3></li>
                         <li><i class="fas fa-dog"></i><h3>Animaux autorisés</h3></li>
                     </ul>
 
-                    <div id="infoComplementaire">
+                    <div id="info">   <!--Info complémentaire-->
                         <i class="fas fa-info"></i>
                         <p>Plus de 500 logements sont disponibles dans cette ville</p>
                     </div>
@@ -60,8 +61,7 @@
                 <!--section hébergement-->
                 <section id="hebergement">
                    
-                    <!--résultats de la recherche-->
-                    <div id="sectionPrincipale">
+                    <div id="sectionPrincipale">    <!--résultats de la recherche-->
 
                         <h2>Hébergements à xxxx </h2>  <!--afficher nom saisie dans la recherche-->
 
@@ -72,7 +72,13 @@
                                 <div class="test">
                                     <h4>Auberge de la Cannebière</h4>
                                     <p>Nuit à partir de <strong>25€</strong></p>
-                                    <!--Ajouter icone étoile-->
+                                    <div class="etoiles">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
                                 </div>
                             </div>
 
@@ -80,14 +86,26 @@
                                 <img class="photoHebergement" src="hebergements/small/aubergeLaCannebiere.jpg" alt="auberge la cannebiere"/>
                                 <h4>Auberge de la Cannebière</h4>
                                 <p>Nuit à partir de <strong>25€</strong></p>
-                                <!--Ajouter icone étoile-->
+                                <div class="etoiles">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
                             </div>
 
                             <div class="cadre">
                                 <img class="photoHebergement" src="hebergements/small/aubergeLaCannebiere.jpg" alt="auberge la cannebiere"/>
-                                <h4>Auberge de la Cannebière</h4>
+                                <h3>Auberge de la Cannebière</h3>
                                 <p>Nuit à partir de <strong>25€</strong></p>
-                                <!--Ajouter icone étoile-->
+                                <div class="etoiles">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
                             </div>
 
                         </div>
@@ -98,21 +116,39 @@
                                 <img class="photoHebergement" src="hebergements/small/aubergeLaCannebiere.jpg" alt="auberge la cannebiere"/>
                                 <h4>Auberge de la Cannebière</h4>
                                 <p>Nuit à partir de <strong>25€</strong></p>
-                                <!--Ajouter icone étoile-->
+                                <div class="etoiles">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+
+                            <div class="cadre">
+                                <img class="photoHebergement" src="hebergements/small/aubergeLaCannebiere.jpg" alt="auberge la cannebiere"/>
+                                <h5>Auberge de la Cannebière</h5>
+                                <p>Nuit à partir de <strong>25€</strong></p>
+                                <div class="etoiles">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
                             </div>
 
                             <div class="cadre">
                                 <img class="photoHebergement" src="hebergements/small/aubergeLaCannebiere.jpg" alt="auberge la cannebiere"/>
                                 <h4>Auberge de la Cannebière</h4>
                                 <p>Nuit à partir de <strong>25€</strong></p>
-                                <!--Ajouter icone étoile-->
-                            </div>
-
-                            <div class="cadre">
-                                <img class="photoHebergement" src="hebergements/small/aubergeLaCannebiere.jpg" alt="auberge la cannebiere"/>
-                                <h4>Auberge de la Cannebière</h4>
-                                <p>Nuit à partir de <strong>25€</strong></p>
-                                <!--Ajouter icone étoile-->
+                                <div class="etoiles">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
                             </div>
 
                         </div>
@@ -134,13 +170,48 @@
 
                                 <div class="resultat">
                                     <img class="photoPopulaire" src="hebergements/small/aubergeLaCannebiere.jpg" alt="aubergeLaCannebiere"/>
-                                    <div class="NomHotel">
+                                    <div class="nomHotel">
                                         <h4>Hôtel Le soleil du matin</h4>
                                         <p>Nuit à partir de <strong>25€</strong></p>
-                                        <!--Ajouter icone étoile-->
+                                        <div class="etoiles">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
                                     </div>    
                                 </div>
-                             
+                                
+                                <div class="resultat">
+                                    <img class="photoPopulaire" src="hebergements/small/aubergeLaCannebiere.jpg" alt="aubergeLaCannebiere"/>
+                                    <div class="nomHotel">
+                                        <h4>Hôtel Le soleil du matin</h4>
+                                        <p>Nuit à partir de <strong>25€</strong></p>
+                                        <div class="etoiles">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>    
+                                </div>
+
+                                <div class="resultat">
+                                    <img class="photoPopulaire" src="hebergements/small/aubergeLaCannebiere.jpg" alt="aubergeLaCannebiere"/>
+                                    <div class="nomHotel">
+                                        <h4>Hôtel Le soleil du matin</h4>
+                                        <p>Nuit à partir de <strong>25€</strong></p>
+                                        <div class="etoiles">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>    
+                                </div>
                                 
 
                             </div>     
