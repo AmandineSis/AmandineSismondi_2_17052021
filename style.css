@@ -3,11 +3,20 @@ body {
     
 }
 
-/*TEXTES*/
+#marge {
+    margin: 0px 10px 0px 10px;
+
+    border: 2px red solid;
+}
+
+                                            /*TEXTES*/
 
 h2 {
     font-size: 16px;
-   
+}
+
+#sectionPrincipale h2 {
+    background-color: tomato;
 }
 
 h3 {
@@ -17,18 +26,35 @@ h3 {
 
 h4 {
     font-size: 12px;
-    margin: 0px 0px 0px 0px;
+    text-align: left;
+    margin: 10px 20px 0px 14px;
 }
 
-h4 + p {
-    font-size: 12px;
+#intro p {
+    font-size: 14px;
     margin: 0px 0px 10px 0px;
 }
 
-/*EN-TETE*/
+#recherche  p {
+    font-size: 14px;
+}
 
-header{
-    margin: 0px 0px 0px 15px;
+.activite1 h4 {
+    padding : 20px;
+ }
+
+h4 + p {
+    font-size: 12px;
+    margin: 0px 0px 10px 14px;
+
+    background-color: teal;
+}
+
+
+header{                                     /*EN-TETE*/
+    margin: 0px 40px 0px 40px;
+
+    border: 2px yellow solid;
 }
 
 nav {
@@ -76,12 +102,8 @@ nav li:hover {                          /*Affiche texte du menu et bordure supé
 
                                         /*SECTION RECHERCHE*/
 #recherche {
+    margin: 0px 40px 0px 40px;
     border: 2px black solid;
-    margin: 0px 0px 0px 15px;
-}
-
-#recherche  p {
-    font-size: 14px;
 }
 
 .intro {
@@ -90,10 +112,6 @@ nav li:hover {                          /*Affiche texte du menu et bordure supé
     font-size: 14px;  
 }
 
-#intro p {
-    font-size: 14px;
-    margin: 0px 0px 10px 0px;
-}
 
 form {
     min-height: 50px;
@@ -123,24 +141,33 @@ form {
 
 #hebergement {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 0px 40px 0px 40px;
     border: 2px black solid;
-    margin: 0px 0px 0px 15px;
     }
 
-                                            /*RESULTATS DE LA RECHERCHE*/
+                                            /*HEBERGEMENTS - RESULTATS DE LA RECHERCHE*/
 
 #sectionPrincipale {
-    width: 60%;
+    width: 880px;
     height: 624px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;  
+    display: block; 
+    justify-content: space-between;
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding: 40px;
-
+    
     border: 2px purple solid;
+}
+
+
+
+.hebergementGlobal {
+    border: yellow 2px solid;
+    width: 803px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .resultatsHebergement {
@@ -149,41 +176,42 @@ form {
     align-items: center;
 
     border: 2px greenyellow solid;
-    
-    }
-
-.cadre {
-    background-color: white;
-    border-radius: 20px;
-    padding: 4px;
-    width: 30%;
-    box-shadow: 2px 2px 20px #c4c7cc;
-    height: 100%;
-}    
-
-.test {
-    margin:auto;
 }
 
+.cadre {
+    width: 246px;
+    height: 200px;    
+    background-color: white;
+    border-radius: 20px;    
+    box-shadow: 2px 2px 20px #c4c7cc;
+    margin:auto;
+}    
+
 .photoHebergement {
-    width: 100%;
-    height: 112px;
+    width: 236px;
+    height: 115px;
     border-radius: 20px 20px 0px 0px;
-    overflow: auto;
+    position: relative;
+    left: 5px;
+    top: 5px;
+    overflow:hidden;
     }
 
 .etoiles {
+
     display: flex;
     align-items: flex-end;
+    margin: 0px 0px 10px 14px;
 }
 
-                                            /*SECTION POPULAIRE*/
+                                            /*HEBERGEMENTS POPULAIRES*/
 
 #sectionPopulaire {
-    width: 30%;
+    width: 420px;
     height: 624px;    
     background-color: #F2F2F2;
     border-radius: 20px;
+    margin: 0px 0px 20px 20px;
     border: 2px red solid;
     display: flex;
     flex-direction: column;
@@ -207,21 +235,6 @@ form {
     
 }
 
-.photoPopulaire{
-    width: 40%;
-    height: 100%;
-    border-radius: 20px 0px 0px 20px;
-    overflow: auto;
-}
-
-.nomHotel {
-    border: 2px orchid solid;
-    display: flex;
-    justify-content:flex-start;
-    flex-direction: column;
-    margin-right: 20px;
-}
-
 .resultat {
     width: 344px;
     height: 148px;
@@ -234,11 +247,29 @@ form {
     border: 2px green solid;
 }    
 
+.photoPopulaire{
+    width: 40%;
+    height: 100%;
+    border-radius: 20px 0px 0px 20px;
+    overflow: hidden;
+}
+
+.nomHotel {
+    border: 2px orchid solid;
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    margin-right: 20px;
+}
 
                                         /*SECTION ACTIVITES*/
 #activites {
+    width: 1337px;
     height: 534px;
+    margin: 0px 0px 0px 40px;
+    border: 2px black solid;
 }
+
 
 .sectionActivites {
     display: flex;
@@ -250,9 +281,7 @@ form {
     border-radius: 20px 20px 20px 20px;
     box-shadow: 2px 2px 20px #c4c7cc;
 }
- .activite1 h4 {
-    padding : 20px;
- }
+
 
 .activiteDouble {
     height: 447px;
@@ -306,4 +335,22 @@ form {
 }
 
 
-/*FOOTER*/
+.contact {                       /*FOOTER*/
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 0px 0px 40px;
+    border: 2px green solid;
+}                           
+
+.liens {
+    display: flex;
+    flex-direction: column;
+}
+
+footer ul {
+    list-style: none;
+    text-align: left;
+    padding: 0px;
+    line-height: 2em;
+    ;
+}
