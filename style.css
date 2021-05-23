@@ -5,12 +5,14 @@ body {
 
 #marge {
     margin: 0px 10px 0px 10px;
+   
 }
 
                                             /*TEXTES*/
 
-h2 {
+h1, h2 {
     font-size: 16px;
+    
 }
 
 h3 {
@@ -31,6 +33,7 @@ h4 {
 
 #recherche  p {
     font-size: 14px;
+    padding-bottom: 20px;
 }
 
 .activite1 h4 {
@@ -58,9 +61,7 @@ a {
     cursor: pointer;
 }
 
-a:visited {
-    color: inherit;
-}
+
 
 
 nav ul {                                /*Menu de navigation*/
@@ -76,6 +77,10 @@ nav li {
 nav li:hover {                          /*Affiche texte du menu et bordure supérieure en bleu*/
     border-top: 2px #0065FC solid;
     color:  #0065FC;
+}
+
+a:visited {
+    color: inherit;
 }
 
 .ancres {                               /*Texte du menu*/
@@ -138,8 +143,10 @@ input.blocRechercher {
 }
 
 #filtresRecherche {
+    margin-top: 35px;
+    width: 939px;
+    height: 50px;
     display: flex;
-    vertical-align: middle;
     border: 2px blue solid;
 }
 
@@ -148,14 +155,22 @@ input.blocRechercher {
     display: flex;
     justify-content: flex-start;
     list-style: none;
-    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
+#filtresRecherche ul {
+    display: flex;
+  
+    color: aqua;
+    
+}
+
 ul i {
     width: 50px;
     height: 50px;
     background-color: #DEEBFF;
     border-radius: 45px 45px 45px 45px;
 }
+
 
 #recherche li {
     display: flex;
@@ -186,26 +201,39 @@ ul i {
 #sectionPrincipale {
     width: 880px;
     height: 624px;
-    display: block; 
-    justify-content: space-between;
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
     background-color: #F2F2F2;
     border-radius: 20px;
 }
 
+#sectionPrincipale h2 {         /*titre hébergements*/
+    
+    padding: 30px 0px 8px 40px;
+   /*marge autour du titre */
+   
 
+}
 
-.hebergementGlobal {
+.hebergementGlobal {  /*div autour des 6 cadres */
     width: 803px;
     height: 430px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 0px 40px 0px 40px;
+}
+
+#sectionPrincipale h4 {
+    font-size: 14px;
+    padding: 30px 0px 20px 40px;
+    
 }
 
 .resultatsHebergement {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .cadre {
@@ -214,17 +242,30 @@ ul i {
     background-color: white;
     border-radius: 20px;    
     box-shadow: 2px 2px 20px #c4c7cc;
-    margin:auto;
+    
 }    
+.cadre h3 {
+    font-size: 14px;
+    font-weight: bold;
+   
+    padding: 16px 0px 0px 10px;
+}
+
+.cadre p {
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px 0px 10px 10px;
+   
+}
 
 .photoHebergement {
     width: 236px;
     height: 115px;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
     position: relative;
     left: 5px;
     top: 5px;
-    overflow:hidden;
+    object-fit: cover;
     }
 
 .etoiles {
@@ -241,41 +282,49 @@ ul i {
     height: 624px;    
     background-color: #F2F2F2;
     border-radius: 20px;
-    margin: 0px 0px 20px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;    
+    
+    
 }
 
-#titrePopulaire {
+#titrePopulaire {                   /*entete de la section populaire*/
+    
     display: flex;
+    align-items: baseline;
     justify-content: space-between;
-    align-items: center;
-    margin: 0px 30px 0px 30px;
+    
+    padding: 0px 30px 0px 30px;
 }
 
-#hebergementPopulaire {
-    height: 600px;
+#titrePopulaire h2 {
+    padding: 30px 0px 8px 5px;
+}
+
+#hebergementPopulaire {         /*cadre 3 hotels*/
+    height: 520px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around; 
+    justify-content: space-between; 
+    align-items: center;
+
+    
+    
 }
 
-.resultat {
-    width: 344px;
-    height: 148px;
+.resultat {                         /*cadre photo + nom hotel*/
+    width: 300px;
+    height: 144px;
     display: flex;
     justify-content: space-between;
     border-radius: 20px;
     background-color: white;
-    padding: 4px;
+    padding: 8px 44px 8px 8px;
+  
 }    
 
 .photoPopulaire{
-    width: 40%;
-    height: 100%;
-    border-radius: 20px 0px 0px 20px;
-    overflow: hidden;
+    width: 138px;
+    border-radius: 15px 0px 0px 15px;
+    object-fit: cover;
 }
 
 .nomHotel {
@@ -295,6 +344,12 @@ ul i {
 
 .sectionActivites {
     display: flex;
+    justify-content: space-around;
+}
+
+.sectionActivites h4 {
+    padding: 5px;
+    text-align: left;
 }
 
 .activite1 {
@@ -304,10 +359,12 @@ ul i {
     box-shadow: 2px 2px 20px #c4c7cc;
 }
 
-
 .activiteDouble {
     height: 447px;
     width: 302px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .activite2 {
@@ -324,11 +381,25 @@ ul i {
     box-shadow: 2px 2px 20px #c4c7cc;
 }
 
+.activite4 {
+    height: 195px;
+    width: 302px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 2px 2px 20px #c4c7cc;
+}
+
+.activite5 {
+    height: 210px;
+    width: 302px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 2px 2px 20px #c4c7cc;
+}
 
 .photoActivites1 {          /*IMAGES SECTION ACTIVITES*/
     height: 389px;
     width: 302px;
     border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
     
 }
 
@@ -336,35 +407,39 @@ ul i {
     height: 177px;
     width: 302px;
     border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
 }
 
 .photoActivites3 {
     height: 109px;
     width: 302px;
     border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
 }
 
 .photoActivites4 {
-    height: 195px;
+    height: 140px;
     width: 302px;
     border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
 }
 
 .photoActivites5 {
-    height: 210px;
+    height: 154px;
     width: 302px;
     border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
 }
 
 
 .contact {                       /*FOOTER*/
     display: flex;
-    justify-content: space-around;
-    margin: 0px 0px 0px 40px;
-
-}                           
+    align-items: flex-start;
+    margin-left: 40px;
+ }                           
 
 .liens {
+    width: 452px;
     display: flex;
     flex-direction: column;
 }
@@ -372,7 +447,6 @@ ul i {
 footer ul {
     list-style: none;
     text-align: left;
-    padding: 0px;
-    line-height: 2em;
-    ;
+    padding: 0px 0px 0px 0px;
+    line-height: 32px;
 }
