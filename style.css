@@ -4,7 +4,8 @@
 body {
     font-family: Arial, verdana, sans-serif;
     width: 1337px;
-    margin: 10px 10px 0px 50px;                
+    margin: 10px 10px 0px 50px;   
+           
 }
 
 a {                                     /*Links*/   
@@ -69,6 +70,7 @@ header {
 #top_nav li:hover {             /*menu hover effects*/                  
     border-top: 2px #0065FC solid;
     color:  #0065FC;
+    cursor: pointer;
 }
 
     /* ------------------------------------Search section----------------------------------------- */
@@ -130,6 +132,10 @@ header {
     border-radius: 0px 20px 20px 0px;
 }
 
+.search_btn:hover {
+    cursor: pointer;
+}
+
 #search_filters {                   /*Search Filters*/
     width: 940px;
     height: 50px;
@@ -157,7 +163,13 @@ header {
     border: 2px #F2F2F2 solid; 
 }
 
-#search_filtersList i {         /*Filters icon*/ /*WARNING: CENTER ICON*/
+#search_filtersList li:hover {
+    color: #DEEBFF;
+    background-color: #0065FC;
+    cursor: pointer;
+}
+
+#search_filtersList i {         /*Filters icon*/ 
     background-color: #DEEBFF;
     color: #0065FC;                                                                                          
     border-radius: 45px 45px 45px 45px;
@@ -168,10 +180,7 @@ header {
 
 }
 
-#search_filtersList i:hover {  /*filters hover effect*/ /* WARNING: CHANGE HOVER EFFECT*/ 
-    background-color: #0065FC;
-    color:#DEEBFF;
-}
+
 
 #search_info {                         /*Search info*/
     height: 25px;
