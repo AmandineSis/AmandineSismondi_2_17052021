@@ -170,9 +170,14 @@ header {
 }
 
 #search_filtersList i {         /*Filters icon*/ 
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #DEEBFF;
     color: #0065FC;                                                                                          
-    border-radius: 45px 45px 45px 45px;
+    border-radius: 100%;
 }
 
 #search_filtersList h3 {        /*filters text*/
@@ -191,18 +196,21 @@ header {
 }
 
 #search_info i {    
-    
-    padding: 4px 8px 4px 8px;
+    width: 20px;
+    height:20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 12px;                                 
     color: #0065FC;
     border: 1px #DEEBFF solid;
-    border-radius: 50%;
+    border-radius: 100%;
 
 }
 
 #search_info p {    
     font-size: 14px;             
-    padding: 0px 0px 5px 0px;
+    padding: 0px 0px 5px 15px;
 }
 
   /* ------------------------------------- Accommodation section ---------------------------------- */
