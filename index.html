@@ -3,47 +3,40 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0, minimum-scale=1">
         <link rel="stylesheet" href="style.css"/>
-       
         <script src="https://kit.fontawesome.com/31987ef527.js" crossorigin="anonymous"></script>
         <title> Reservia </title>
     </head>
 
     <body>
-        <!--Header-->
-            <header>
+            <header>                                <!--Header-->
                 <a id="top"><img id="logo" src="logo/Reservia.svg" alt="logo"/></a>    <!--Logo with anchor for empty links-->
                 <nav>
                     <ul id="top_nav">                                                           <!--Menu-->
                         <li class="anchor"> <a href="#accommodation">Hébergements</a></li>      
                         <li class="anchor"><a href="#activities">Activités</a></li>
-                        <li class="subscription">S'inscrire</li>
                     </ul>
+                    <a href="#top" class="subscription">S'inscrire</a>
                 </nav>
             </header>
 
 
             <main>                              <!--main section-->
-            
                 <section id="search_section">    <!--search section-->
-
                     <div id="search_intro">        <!--search introduction-->
                         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                         <p>En plein centre ville ou en pleine nature</p>
                     </div>
-
                     <div id="search_field">        <!--search field-->
                         <i class="fas fa-map-marker-alt"></i>
                         <form method="POST">             
                             <p>
-                                <input class="search_entryField" type="search" name="Town, Country" value="Marseille, France"/>
-                                <input class="search_btn" type="button" value="Rechercher"/>
+                                <input class="search_entryField" type="search" name="Town, Country" value="Marseille, France"/><!-- comment to delete space between 2 inputs
+                             --><input class="search_btn" type="button" value="Rechercher"/>
                             </p>
                         </form>
                     </div>
-
-
                     <div id="search_filters">     
                         <h3>Filtres</h3>
                         <ul id="search_filtersList">       <!--filtres de la recherche-->
@@ -53,21 +46,14 @@
                             <li><i class="fas fa-dog" ></i><h3>Animaux autorisés</h3></li>
                         </ul>
                     </div>    
-
                     <div id="search_info">   <!-- Extra information-->
                         <i class="fas fa-info"></i>
                         <p>Plus de 500 logements sont disponibles dans cette ville</p>
                     </div>
                 </section>
-
-
-                <section id="accommodation">       <!--accommodation section-->
-                   
+                <section id="accommodation">       <!--accommodation section-->   
                     <div id="accommodation_main">            <!--accommodation main search results-->
                         <h2>Hébergements à Marseille </h2>       <!--title : insert city name researched-->
-
-                        <div id="frame">         <!-- Frame 2 rows of 3 results -->
-                        
                             <div class="frame_row">   <!--Row 1 of 3 results-->
                                 <a href="#top">
                                     <div class="result">
@@ -97,8 +83,6 @@
                                         </div>
                                     </div>
                                 </a>
-
-
                                 <a href="#top">
                                     <div class="result">
                                         <img class="accommodation_pic" src="hebergements/small/HotelLesMouettes.jpg" alt="HotelLesMouettes"/>
@@ -113,12 +97,9 @@
                                         </div>
                                     </div>
                                 </a>
-
                             </div>
-
-                            <div class="frame_row">          <!--Row 1 of 3 results-->
-                                
-                                <a href="#haut">
+                            <div class="frame_row">          <!--Row 1 of 3 results-->                   
+                                <a href="#top">
                                     <div class="result">
                                         <img class="accommodation_pic" src="hebergements/small/HotelDeLaMer.jpg" alt="HotelDeLaMer"/>
                                         <h3>Hôtel de la mer</h3>
@@ -132,8 +113,7 @@
                                         </div>
                                     </div>
                                 </a>
-
-                                <a href="#haut">
+                                <a href="#top">
                                     <div class="result">
                                         <img class="accommodation_pic" src="hebergements/small/AubergeLePanier.jpg" alt="AubergeLePanier"/>
                                         <h3>Auberge Le Panier</h3>
@@ -147,8 +127,7 @@
                                         </div>
                                     </div>
                                 </a>
-
-                                <a href="#haut">
+                                <a href="#top">
                                     <div class="result">
                                         <img class="accommodation_pic" src="hebergements/small/HotelChezAmina.jpg" alt="HotelChezAmina"/>
                                         <h3>Hôtel Chez Amina</h3>
@@ -162,23 +141,15 @@
                                         </div>
                                     </div>
                                 </a>    
-
-                            </div>  
-                        </div>
-                        <a href="#haut"><h4>Afficher plus</h4></a>
-
-                    </div>
-                   
-                    <aside id="accommodation_side">            <!--Side section: accommodation favourite-->
-
-                        
+                            </div>                        
+                        <a href="#top"><h4>Afficher plus</h4></a>
+                    </div>                 
+                    <aside id="accommodation_side">            <!--Side section: accommodation favourite-->                       
                                 <div id="side_title">         <!--Side Title-->
                                     <h2>Les plus populaires</h2>
                                     <a href="#top"><i class="fas fa-chart-line"></i></a>
-                                </div>
-                            
+                                </div>                         
                                 <div id="side_frame">     <!--Frame 1 column 3 results -->
-
                                 <a href="#top">
                                     <div class="favourite">
                                         <img class="fav_pic" src="hebergements/small/HotelLeSoleilDuMatin.jpg" alt="HotelLeSoleilDuMatin"/>
@@ -195,8 +166,7 @@
                                         </div>    
                                     </div>
                                 </a>    
-
-                                <a href="#haut">    
+                                <a href="#top">    
                                     <div class="favourite">
                                         <img class="fav_pic" src="hebergements/small/AuCoeurDeLEauChambresDHotes.jpg" alt="AuCoeurDeLEauChambresDHotes"/>
                                         <div class="fav_name">
@@ -212,8 +182,7 @@
                                         </div>    
                                     </div>
                                 </a>    
-
-                                <a href="#haut">
+                                <a href="#top">
                                     <div class="favourite">
                                         <img class="fav_pic" src="hebergements/small/HotelToutBleuEtBlanc.jpg" alt="HotelToutBleuEtBlanc"/>
                                         <div class="fav_name">
@@ -232,11 +201,8 @@
                             </div>     
                     </aside>
                 </section>
-
                 <section id="activities">         <!--activities section-->
-
                     <h2>Activité à Marseille </h2>   <!--title : insert city name researched-->
-
                     <div class="activities_frame">      <!--Frame 4 columns-->
                         <a href="#top">
                             <div class="frame1">
@@ -277,13 +243,10 @@
                                     <h3>Parc Longchamp</h3>
                                 </div>
                             </a>
-                        </div>
-                    
+                        </div>                   
                     </div>
-                </section>
-        
+                </section>      
             </main> 
-
             <footer>                                <!--footer-->
                 <div id="bottom_links">
                     <div class="links_frame">
@@ -309,8 +272,6 @@
                         </ul>
                     </div>
                 </div>    
-            </footer>
-        
+            </footer>       
     </body>
-
 </html>
