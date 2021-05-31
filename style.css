@@ -523,7 +523,25 @@ footer {
     }  
 
     /*accommodation section*/
-    
+    #accommodation {
+        flex-direction: column-reverse;
+        margin-top: 30px;
+        padding: 0 auto;
+    }
+
+    #accommodation_side {       
+        margin: 20px 0;
+        padding: 0 10px;
+    }
+
+    #side_frame {
+        margin: 10px 5px;
+    }
+
+
+
+
+
 }
 
 /*tablets*/
