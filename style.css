@@ -1,9 +1,14 @@
 
 /* -----------------------------------------GENERAL ---------------------------------------------------*/
+@font-face {
+    font-family: "raleway";
+    src: url(font/static/Raleway-Regular.ttf);
+}
 
 body {
-    font-family: Arial, verdana, sans-serif;
-    width: auto;
+    font-family: "raleway", Arial, verdana, sans-serif;
+    max-width: 1300px;
+    margin: 0 auto;
     overflow-x:hidden;     
 }
 
@@ -53,7 +58,7 @@ a#top #logo {
     margin-top: 25px;
 }
 
-nav, ul {
+nav, #top_nav {
     display: flex;
     justify-content: flex-end;
     align-items: baseline;
@@ -254,7 +259,7 @@ main {
    line-height: 0.7;
 }
 .result p {
-    font-size: 12px;
+    font-size: 13px;
     padding-left: 15px;
     line-height: 0.7;
 }
@@ -321,7 +326,7 @@ main {
 }
 
 .favourite p {
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .fav_stars {       /* --star classification */
@@ -449,7 +454,7 @@ footer {
 
 /* ------responsive ------*/
 /*mobiles portrait*/
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 500px) {
     
     header {
         padding: 0;
@@ -494,7 +499,7 @@ footer {
     }
     
     main {
-       padding: 0 auto;    /*centered elements*/
+       margin: 0 auto;    /*centered elements*/
        box-sizing: border-box;
        border: blue 2px solid;
     }
@@ -523,10 +528,11 @@ footer {
     }  
 
     /*accommodation section*/
+    /*favourite results*/
     #accommodation {
         flex-direction: column-reverse;
         margin-top: 30px;
-        padding: 0 auto;
+        margin: 0 auto;
     }
 
     #accommodation_side {       
@@ -537,11 +543,53 @@ footer {
     #side_frame {
         margin: 10px 5px;
     }
+    /*main results*/  /*WARNING: center frame*/
+    
+    #accommodation_main {
+        margin: 0 auto;
+        background-color: white;
+    }
+    
+    .frame_row {
+        display: inline;  
+    }
 
+    .result {
+        margin-bottom: 20px;
+    }
 
+    /*activities*/
+    #activities {
+        height: auto;
+    }
 
+    .activities_frame {
+        display: inline;
+    }
+    
+    .dblFrame {
+        height: auto;
+        justify-content:flex-start
+    }
 
+    .frame1, .dblFrame_block1, .dblFrame_block2, 
+    .dblFrame_block4, .dblFrame_block5  {
+        height: 200px;
+        margin-bottom: 10px;
+        justify-content: none;
+    }
 
+    .activities_frame img {
+        height: 144px;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    #bottom_links {
+        display: inline;
+    }
 }
 
 /*tablets*/
