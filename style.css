@@ -153,7 +153,7 @@ main {
     margin-right: 24px;
     display: flex;
     border: 2px #F2F2F2 solid; 
-    border-radius: 45px;
+    border-radius: 50px;
 }
 
 #search_filtersList i {        /*Filters icons*/ 
@@ -164,7 +164,7 @@ main {
     justify-content: center;
     background-color: #DEEBFF;
     color: #0065FC;                                                                                          
-    border-radius: 45px;
+    border-radius: 50px;
 }
 
 #search_filtersList h3 {        /*filters text*/
@@ -451,11 +451,15 @@ footer {
 /*mobiles portrait*/
 @media screen and (max-width: 414px) {
     
+    header {
+        padding: 0;
+    }
+
     a#top #logo {
         margin-top: 0;
     }
 
-    .subscription {    /*ok*/
+    .subscription {    
         align-self: flex-end;
     }
 
@@ -468,7 +472,7 @@ footer {
         left: 0;
     }
 
-    #top_nav {     /*comprend 2 li*/
+    #top_nav {     
         width: 100%;
         padding: 0;
         justify-content: flex-start;
@@ -489,9 +493,37 @@ footer {
         border-bottom: 2px #0065FC solid;
     }
     
+    main {
+       padding: 0 auto;    /*centered elements*/
+       box-sizing: border-box;
+       border: blue 2px solid;
+    }
+    /*search section*/
+    .search_entryField {
+        width:auto;
+    }
+    .search_btn {
+        width:auto;
+    }
+
+    #search_filters {
+       display: inline;
+      
+    }
+     
+    #search_filtersList {
+        height: 150px;
+        padding-left: 0;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    #search_filtersList li {
+        width: auto;
+        margin: 0 20px 5px 0;
+    }  
+
+    /*accommodation section*/
     
-        
-       
 }
 
 /*tablets*/
