@@ -2,11 +2,22 @@
     font-family: "raleway";
     src: url(font/static/Raleway-Regular.ttf);
 }
+
+/** {
+    box-sizing: border-box;
+  }*/
+
 body {
     font-family: "raleway", Arial, verdana, sans-serif;
+    margin: 0 auto;   
+}
+
+#body_frame {
     max-width: 1300px;
+    /*center page*/
     margin: 0 auto;
-    overflow-x:hidden;     
+    overflow-x:hidden; 
+    box-sizing: border-box;
 }
 
 /* Text font-size*/ 
@@ -91,7 +102,7 @@ nav .subscription {
 
 /*---------------------------------search section---------------------------------*/
 main {
-    padding-left: 20px;
+    padding: 0 20px;
 }
 
 /*search title*/
@@ -104,7 +115,7 @@ main {
     height: 50px;
     display: flex;
     align-items: center;
-    
+ 
 }
 
 /*location icon*/
@@ -116,7 +127,8 @@ main {
     /*center icons*/
     display: flex;  
     align-items: center;
-    justify-content: center;   
+    justify-content: center;  
+   
 }
 
 .search_entryField {             
@@ -126,6 +138,7 @@ main {
     font-weight: bold;
     padding-left: 10px;
     border: 2px #F2F2F2 solid;  
+    
 }
 
 .search_btn {                       
@@ -136,14 +149,13 @@ main {
     color: white;
     background-color: #0065FC;
     border-radius: 0 20px 20px 0;
+   
 }
 
 #search_filters {                   
-    width: auto;
-    /*height: auto;*/
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
-    align-items: flex-start;
+    align-items: baseline;
 }
 
 /* Filters title*/
@@ -164,9 +176,9 @@ main {
 /*individual chip: icon + text*/
 #search_filtersList li {        
     height: 50px;
-    margin: 0 0 5px 24px;
+    margin-left: 24px;
     border: 3px #F2F2F2 solid; 
-    border-radius: 45px;
+    border-radius: 50px;
     /*center icon + text*/
     display: flex;
     align-items:center;
@@ -175,15 +187,16 @@ main {
 }
 /*Filters icons*/
 #search_filtersList i {         
-    width: 53px;
-    height: 53px;
+    width: 50px;
+    height: 50px;
     background-color: #DEEBFF;
     color: #0065FC;                                                                                          
-    border-radius: 50px;
+    border-radius: 50%;
     /*center icons*/
     display: flex;           
     align-items: center;
     justify-content: center;
+
     
 }
 
@@ -230,14 +243,11 @@ main {
 /*-------------------------------Accommodation section-----------------------------*/
 
 #accommodation {
-    width: auto;
     display: flex;
-    justify-content: space-between;
-    
 }
 
 #accommodation_main {       /* Main accommodation result */
-    width: auto;
+    width: 100%;
     height: auto;
     background-color: #F2F2F2;
     border-radius: 20px;
@@ -297,12 +307,16 @@ main {
     padding: 20px 0 0 15px;
    
 }
-  
+ 
+#accommodation_side, #side_frame, .favourite {
+    box-sizing: border-box;
+}
+
 #accommodation_side {      /* Side section Favourite accommodation */
-    height: 624px;    
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding: 30px 30px 0 30px;
+    padding: 30px 20px 0 20px;
+    margin-left: 30px;
 }
 
 #side_title {           /*side title*/
@@ -319,7 +333,7 @@ main {
 #side_frame {       /*Frame 1 column 3 results*/
     height: 520px;
     align-items: center;  
-    margin: 30px 0;
+    margin: 40px 0;
 }
 
 .favourite {        /* block 1 result: pic + description */ 
@@ -330,7 +344,7 @@ main {
     border-radius: 20px;
     background-color: white;
     box-shadow: 2px 2px 20px #c4c7cc; 
-    padding: 5px 44px 5px 5px;
+    padding: 5px 24px 5px 5px;
     margin-bottom: 20px;
 }
 
@@ -341,7 +355,14 @@ main {
 }
 
 .fav_name {             /*description*/
-    padding-left: 20px;
+    padding: 5px 0 5px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.fav_name h3 {
+    margin: 0;
 }
 
 .favourite p {
@@ -351,7 +372,6 @@ main {
 .fav_stars {       /* --star classification */
     font-size: 12px;
     display: flex;
-    padding-top: 35px;
 }
 
 
@@ -366,6 +386,7 @@ main {
 .activities_frame {             /*Frame 4 columns*/
     display: flex;
     justify-content: space-between;
+    box-sizing: border-box;
 }
 
 #activities h2 {          /*activities title*/
@@ -378,6 +399,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-right: 10px;
 }
 
 .frame1 {                   /*Frame 1 and 3: single activity */
@@ -432,13 +454,17 @@ main {
 
   /*--------------------------------------------FOOTER----------------------------------------*/
 footer {
-    padding-left: 20px;
+    padding-left: 30px;
     background-color: #F2F2F2;
 }
 
 #bottom_links {                       /*Footer frame*/
     display: flex;
     align-items: flex-start;
+    /*center align elements*/
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 #bottom_links h3 {                      /*Links header*/
@@ -467,11 +493,11 @@ footer {
         margin-top: 20px;
     }
     #accommodation_side {
+        width: 100%;
         height:auto;
         align-items: center;
         justify-content: space-between;
-        padding: 20px;
-        margin-bottom: 10px;
+        margin: 0 0 10px 10px;
     }
 
     #side_title {
@@ -482,7 +508,8 @@ footer {
     #side_frame {       
         height: auto;
         display: flex; 
-        justify-content: space-between;
+        justify-content: space-around;
+
         margin: 30px 0;
     }
     /* 1 row of 3 results*/
@@ -494,6 +521,12 @@ footer {
         margin: 30px 0; 
     } 
   
+
+
+    #accommodation_main {
+        background-color: white;
+    }
+    
     /*activities section*/
     #activities {
         height: auto;
@@ -523,8 +556,8 @@ footer {
     .frame1 {
         margin-bottom: 20px;
     }
-}
-
+}                           
+                                                    /*from 1200px - tablets*/
 /*--------------------- Responsive: display last activity frame in 1 row-----------------------------*/
 @media screen and (max-width: 1227px) and (min-width: 926px){
     .dblFrame2 {
@@ -567,6 +600,7 @@ footer {
     }
     #search_filtersList li {
         width: auto;
+        margin-bottom: 10px;
     } 
     /*turn filter BG in blue and text in white*/
     #search_filtersList li:active {  
@@ -574,24 +608,12 @@ footer {
         background-color: #0065FC;
         cursor: pointer;
     }
-
-    /*footer*/
-    /*Display links in a single centered column*/
-    #bottom_links {                       
-        display: inline;
-        text-align: center;   
-    }
-    .links_frame {                          
-        width: auto;
-    }
-    .links_frame ul {                      
-        text-align: center;
-    }
-}
     
+}
+                            /*down to 768px - tablets*/
 
 /*---------- responsive: adapt header and activities section --------*/
-@media screen and (max-width: 624px) {         
+@media screen and (max-width: 768px) {         
 
     nav {
         width: 100%;
@@ -642,16 +664,44 @@ footer {
     .activities_pic1, .activities_pic4 {
         height: 144px;
     }
-}
-/*---------- responsive: remove main section BG color--------*/
-@media screen and (max-width: 581px) {
-    #accommodation_main {
-        background-color: white;
+
+    /*footer*/
+    /*Display links in a column*/
+    #bottom_links {                       
+        display: inline;
+         
+    }
+    .links_frame {                          
+        width: auto;
     }
 }
-/*---------- responsive: remove border radius on side section --------*/
-@media screen and (max-width: 380px) {
+
+/*---------- responsive: accommodation section on 1 column --------*/
+@media screen and (max-width: 568px) {
     #accommodation_side {
         border-radius: 0;
+        justify-content: center;
     }
+
+    #side_frame {
+        width: 100%;
+    }
+    #side_frame a {
+        width : 100%;
+    }
+
+    .frame_row a {
+        width: 100%;
+    }
+
+    .result {
+        width: 100%;
+    }
+    .accommodation_pic {
+        width: 100%;
+        position: static;
+    }
+
+
+    
 }
