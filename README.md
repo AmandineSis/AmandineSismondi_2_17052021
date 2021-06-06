@@ -1,4 +1,7 @@
 <h1>Reservia</h1>
+
+Voir le projet en live >>> [Reservia](https://amandinesis.github.io/AmandineSismondi_2_17052021/)
+
 Reservia est une entreprise proposant un outil de planification de vacances.
 Leur site permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix.
 Les hébergements peuvent également être filtrés par thématique, par exemple leur budget ou leur ambiance.
