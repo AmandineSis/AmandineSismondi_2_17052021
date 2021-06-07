@@ -111,42 +111,47 @@ main {
     height: 50px;
     display: flex;
     align-items: center;
- 
 }
 
 /*location icon*/
-#search_field i {               
+#search_field .fa-map-marker-alt {               
     height: 50px;
     width: 50px;
     background-color: #F2F2F2;
-    border-radius: 20px 0 0 20px; 
+    border-radius: 15px 0 0 15px; 
     /*center icons*/
     display: flex;  
     align-items: center;
     justify-content: center;  
-   
 }
 
+#search_field p {
+    display: flex;
+}
 .search_entryField {             
     width: 236px;
     height: 50px;
     font-size: 14px;           
     font-weight: bold;
     padding-left: 10px;
-    border: 2px #F2F2F2 solid;  
-    
+    border: 2px #F2F2F2 solid;   
 }
 
-.search_btn {                       
+.btn {                       
     width: 125px;
     height: 50px;
-    font-size: 14px;                
+    font-size: 14px; 
+    padding-left: 10px;            
     font-weight: bold;
     color: white;
     background-color: #0065FC;
-    border-radius: 0 20px 20px 0;
-   
+    border-radius: 0 15px 15px 0;
 }
+/*magnifying glass icon - hidden*/
+.fa-search {
+    visibility: hidden;
+}
+
 /*Filters row*/
 #search_filters {                   
     margin-top: 20px;
@@ -642,26 +647,40 @@ footer {
     }
 
     /*search field resized to fit*/
-    #search_field i {               
+    .fa-map-marker-alt {               
         width: 10%;
     }
     .search_entryField {             
-        width: 55%;
+        width: auto;
     }
-    .search_btn {                       
-        width: 35%;
+    /*Button text hidden*/
+    .btn span {
+        visibility: hidden;
+    }
+    /*button resized*/
+    .btn {                       
+        width: 50px;
+    }
+    /*magnifying glass icon visible*/
+    .fa-search {                       
+        visibility: visible;
+        position: relative;
+        top: -26px;
+        left: -11px;
+        font-size: 20px;
+        padding: 22px 0 0 14px;
     }
     
     /*search filters*/ 
-    #search_filters {                    
-        display: inline;
-    }
+     #search_filters  {                   
+         display: inline;
+    }  
     #search_filtersList {           
         height: auto;
         flex-wrap: wrap;
         padding-left: 0;
     }
-    
+   
     /*turn filter BG in blue and text in white*/
     #search_filtersList li:active {  
         color: #DEEBFF;
@@ -752,7 +771,7 @@ footer {
     }
     /*font larger*/
     .activities_frame h3 {
-        font-size: 20px;
+        font-size: 18px;
     }
     
     .frame1 {
